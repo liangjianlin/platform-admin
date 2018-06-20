@@ -11,7 +11,7 @@ public class AuthController {
     @RequestMapping(value = "/login")
     public JSONObject login() {
         JSONObject rs = new JSONObject();
-        rs.put("token", "dsfafasfdasfegreg");
+        rs.put("user", "admin");
         return rs;
     }
 
@@ -19,6 +19,12 @@ public class AuthController {
     public JSONObject user() {
         JSONObject rs = new JSONObject();
         rs.put("user", "admin");
+        return rs;
+    }
+
+    @RequestMapping(value = "/logout")
+    public JSONObject logout() {
+        JSONObject rs = new JSONObject();
         return rs;
     }
 }
