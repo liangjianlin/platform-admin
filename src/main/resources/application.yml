@@ -1,0 +1,4 @@
+spring:
+  profiles:
+    active: dev
+clients: client:clientToken,client1:client1
